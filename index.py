@@ -2,6 +2,12 @@ from flask import Flask
 
 app = Flask(__name__)
 
+@app.route('/')
+def index():
+    return {
+        'msg': 'Hello World!'
+    }
+
 @app.route('/add/<a>/<b>')
 def add_route(a, b):
     return {
@@ -16,4 +22,4 @@ def add(a,b):
 
 
 if __name__ == "__main__":
-    app.run("localhost", 8000)
+    app.run("0.0.0.0", 80)
