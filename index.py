@@ -17,6 +17,9 @@ def add_route(a, b):
 
 # Takes two numbers as strings
 def add(a,b):
+    if type(a) == str or type(b) == str:
+        return "Invalid Input"
+
     a = int(a)
     b = int(b)
     return a + b
