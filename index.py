@@ -15,9 +15,12 @@ def add_route(a, b):
         'sum': add(a, b)
     }
 
-# Takes two numbers as strings
+# Input can be both strings and digits
 def add(a,b):
-    if type(a) == str or type(b) == str:
+    if type(a) == str and not a.isdigit():
+        return "Invalid Input"
+
+    if type(b) == str and not b.isdigit():
         return "Invalid Input"
 
     a = int(a)
