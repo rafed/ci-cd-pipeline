@@ -28,6 +28,4 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "rafed-add"
           heroku_email: "rafed123@gmail.com"
-
-
-      
+          procfile: "web: gunicorn index:app"
