@@ -17,7 +17,7 @@ To implement this do the following:
 
 #### Step 2: Setup a hello world app
 
-1. Clone/download the code of this repo and include it in your project. If you are feeling adventurous you may write your own. When writing your own make sure to do the following:
+Clone/download the code of this repo and include it in your project. If you are feeling adventurous you may write your own app. When writing your own make sure to do the following:
 - It should be a web app
 - Write tests
 - Make a dependencies file (requirements.txt/ package.json)
